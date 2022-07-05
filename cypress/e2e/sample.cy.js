@@ -19,7 +19,8 @@ describe("My First Test", () => {
 
     cy.get("select[name='toDay']").select("5");
     cy.get("input[name='findFlights']").click();
-    cy.get("font:nth-child(1) > b > font:nth-child(1)").contains(
+    cy.get("font:nth-child(1) > b > font:nth-child(1)").should(
+      "contain.text",
       "After flight finder - No Seats Avaialble"
     );
   });
