@@ -1,4 +1,4 @@
-describe("My Second Test", () => {
+describe("Check the login flow (negative case)", () => {
   it('clicks the link "type"', () => {
     cy.visit("https://demo.guru99.com/test/newtours/");
     cy.wait(1000);

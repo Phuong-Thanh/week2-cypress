@@ -1,4 +1,4 @@
-describe("Payment site negative testcase", () => {
+describe("Check payment flow (negative case if leaves Expiration Month not selected)", () => {
   it("positive test", () => {
     cy.visit("https://demo.guru99.com/payment-gateway/index.php");
     cy.get("input[class='button special']").click();

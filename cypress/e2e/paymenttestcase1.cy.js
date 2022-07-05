@@ -1,4 +1,4 @@
-describe("Payment site positive testcase", () => {
+describe("Check payment flow (positive case)", () => {
   it("positive test", () => {
     cy.visit("https://demo.guru99.com/payment-gateway/index.php");
     cy.get("select[name='quantity']").select("4");
