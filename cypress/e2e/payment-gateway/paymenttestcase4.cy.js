@@ -7,8 +7,8 @@ describe("Check payment flow (negative case if Card Number had shorter than 16 n
     cy.get("select[name='year']").select("2026");
     cy.get("input[name='cvv_code']").type("766");
     cy.get("input[name='submit']").click();
-    cy.on("window:alert", (t) => {
-      expect(t).to.contains("Check card number is 16 digits!");
+    cy.on("window:alert", (popUp) => {
+      expect(popUp).to.equal("Check card number is 16 digits!");
     });
   });
 });
